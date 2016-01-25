@@ -2,19 +2,20 @@
 <h1 style="color: Black">Choose a color</h1>
 <form>
     <select ng-model="productColor">
-        <option value="01"> </option>
-        <option value="02">Black</option>
-        <option value="03">Ivory</option>
-        <option value="04">Midnight</option>
-        <option value="05">Navy</option>
-        <option value="06">Nude</option>
-        <option value="07">White</option>
-        <option value="08">Blush</option>
-        <option value="09">Pastel Pink</option>
-        <option value="10">Army Green</option>
+        <option value="Black">Black</option>
+        <option value="Ivory">Ivory</option>
+        <option value="Midnight">Midnight</option>
+        <option value="Navy">Navy</option>
+        <option value="Nude">Nude</option>
+        <option value="White">White</option>
+        <option value="Blush">Blush</option>
+        <option value="Pastel Pink">Pastel Pink</option>
+        <option value="Army Green">Army Green</option>
     </select>
     <br><br>
     <input type="submit" id="sub1">
 </form>
 <br>
-<h3>{{color}}</h3>
+<div ng-repeat="o in products track by $index">
+    {{o}}
+</div>
